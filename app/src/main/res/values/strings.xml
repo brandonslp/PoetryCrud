@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DishMenu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dish_form">Create a new Dish</string>
+    <string name="edtDishName">Nombre</string>
+    <string name="edtDishDescripcion">Descripción</string>
+    <string name="edtDishPrice">Precio</string>
+    <string name="btnDishFormNew">Guardar</string>
+    <string name="btnDishFormUpdate">Actualizar</string>
+    <string name="spnDishTypes">Tipo de plato</string>
+    <string name="spnFoodTypes">Tipo de comida</string>
+    <string name="itemMenuDishEdit">Editar</string>
+    <string name="itemMenuDishDelete">Eliminar</string>
+    <string name="searchableHint">Buscar...</string>
+    <string-array name="foodTypes">
+        <item>Colombiana</item>
+        <item>Mexicana</item>
+        <item>Italiana</item>
+        <item>Árabe</item>
+    </string-array>
+    <string-array name="dishTypes">
+        <item>Carnes</item>
+        <item>Pollo</item>
+        <item>Sopa</item>
+        <item>Ensalada</item>
+        <item>Arroz</item>
+        <item>Bebida</item>
+        <item>Pescado</item>
+    </string-array>
+</resources>
+
