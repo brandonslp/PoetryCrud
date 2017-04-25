@@ -3,7 +3,7 @@ package com.lp.brandon.poetrycrud.data;
 import android.content.Context;
 
 import com.j256.ormlite.android.apptools.OpenHelperManager;
-import com.lp.brandon.poetrycrud.Models.Dish;
+import com.lp.brandon.poetrycrud.models.Dish;
 
 import nl.elastique.poetry.database.DatabaseConfiguration;
 

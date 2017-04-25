@@ -3,7 +3,7 @@ package com.lp.brandon.poetrycrud.controllers;
 import android.content.Context;
 
 import com.j256.ormlite.dao.Dao;
-import com.lp.brandon.poetrycrud.Models.Dish;
+import com.lp.brandon.poetrycrud.models.Dish;
 import com.lp.brandon.poetrycrud.data.DatabaseHelper;
 
 import java.sql.SQLException;

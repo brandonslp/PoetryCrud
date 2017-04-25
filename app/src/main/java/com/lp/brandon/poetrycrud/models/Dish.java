@@ -1,4 +1,4 @@
-package com.lp.brandon.poetrycrud.Models;
+package com.lp.brandon.poetrycrud.models;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;

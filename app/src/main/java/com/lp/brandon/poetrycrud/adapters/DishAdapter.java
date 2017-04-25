@@ -10,12 +10,11 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
-import com.lp.brandon.poetrycrud.Acitivities.DishForm;
-import com.lp.brandon.poetrycrud.Acitivities.MainActivity;
-import com.lp.brandon.poetrycrud.Models.Dish;
+import com.lp.brandon.poetrycrud.activities.DishForm;
+import com.lp.brandon.poetrycrud.activities.MainActivity;
+import com.lp.brandon.poetrycrud.models.Dish;
 import com.lp.brandon.poetrycrud.R;
 
 import java.util.List;

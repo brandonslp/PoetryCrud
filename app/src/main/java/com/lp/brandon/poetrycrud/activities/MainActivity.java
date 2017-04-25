@@ -1,11 +1,10 @@
-package com.lp.brandon.poetrycrud.Acitivities;
+package com.lp.brandon.poetrycrud.activities;
 
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,7 +16,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.lp.brandon.poetrycrud.Models.Dish;
+import com.lp.brandon.poetrycrud.models.Dish;
 import com.lp.brandon.poetrycrud.R;
 import com.lp.brandon.poetrycrud.adapters.DishAdapter;
 import com.lp.brandon.poetrycrud.controllers.Dishes;
@@ -25,6 +24,8 @@ import com.lp.brandon.poetrycrud.controllers.Dishes;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -168,12 +169,24 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.menu_main_filter:
+                Intent intent = new Intent(this,Filter.class);
+                startActivity(intent);
+                break;
+            case R.id.menu_main_about:
+                showdialog();
+                break;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showdialog(){
+        new SweetAlertDialog(this)
+                .setTitleText("Acerca de")
+                .setContentText("Brandon López")
+                .show();
     }
 
     public Dishes getDishController() {
