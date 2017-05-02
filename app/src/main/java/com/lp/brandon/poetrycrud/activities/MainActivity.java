@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
     private void showdialog(){
         new SweetAlertDialog(this)
                 .setTitleText("Acerca de")
-                .setContentText("Brandon López")
+                .setContentText("Antonio Barandica\nBrandon López")
                 .show();
     }
 
