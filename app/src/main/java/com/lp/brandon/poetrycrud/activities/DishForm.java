@@ -98,15 +98,19 @@ public class DishForm extends AppCompatActivity {
     }
 
     private void addDish(){
-        Dish dish = new Dish(
-          edtName.getText().toString(),
-          edtDescriprion.getText().toString(),
-          spnDishTypes.getSelectedItem().toString(),
-          spnFoodTypes.getSelectedItem().toString(),
-          Double.parseDouble(edtPrice.getText().toString())
-        );
-        boolean result = controllerDishes.addDish(dish);
-        Log.v("Brandon-lp", "Insercion -> "+result);
+        try{
+            Dish dish = new Dish(
+              edtName.getText().toString(),
+              edtDescriprion.getText().toString(),
+              spnDishTypes.getSelectedItem().toString(),
+              spnFoodTypes.getSelectedItem().toString(),
+              Double.parseDouble(edtPrice.getText().toString())
+            );
+            boolean result = controllerDishes.addDish(dish);
+            Log.v("Brandon-lp", "Insercion -> "+result);
+        }catch (NumberFormatException e){
+            e.printStackTrace();
+        }
     }
 
     private void updateDish(Dish dish){
